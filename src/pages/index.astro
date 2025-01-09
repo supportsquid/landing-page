@@ -1,0 +1,65 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout>
+	<section id="main">
+		<svg class="hover" width="300px" height="300px" viewBox="0 0 1162 1162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+			<g transform="matrix(1,0,0,1,-3260.29,-98.1645)">
+				<g transform="matrix(1,0,0,1.30951,1.46971,-196.417)">
+					<path d="M3500.02,1006.31C3470.84,1006.31 3442.87,997.46 3422.24,981.707C3401.61,965.953 3390.02,944.588 3390.02,922.309L3390.02,401.317C3390.02,379.038 3401.61,357.672 3422.24,341.919C3442.87,326.166 3470.84,317.316 3500.02,317.316L4177.87,317.316C4207.49,317.316 4235.9,326.301 4256.84,342.294C4277.78,358.286 4289.55,379.978 4289.55,402.595L4289.55,922.309C4289.55,944.588 4277.96,965.953 4257.33,981.707C4236.7,997.46 4208.72,1006.31 4179.55,1006.31L4174.94,1006.31C4145.77,1006.31 4117.79,997.46 4097.16,981.707C4076.53,965.953 4064.95,944.588 4064.95,922.309C4064.95,897.866 4064.95,872.213 4064.95,851.563C4064.95,840.423 4059.15,829.74 4048.84,821.864C4038.52,813.987 4024.53,809.562 4009.95,809.562L4007.08,809.562C3992.5,809.562 3978.51,813.987 3968.19,821.864C3957.88,829.74 3952.08,840.423 3952.08,851.563C3952.08,872.213 3952.08,897.866 3952.08,922.309C3952.08,944.588 3940.49,965.953 3919.87,981.707C3899.24,997.46 3871.26,1006.31 3842.08,1006.31C3840.55,1006.31 3839.01,1006.31 3837.48,1006.31C3808.31,1006.31 3780.33,997.46 3759.7,981.707C3739.07,965.953 3727.48,944.588 3727.48,922.309C3727.48,897.866 3727.48,872.213 3727.48,851.563C3727.48,840.423 3721.69,829.74 3711.37,821.864C3701.06,813.987 3687.07,809.562 3672.48,809.562L3669.62,809.562C3655.03,809.562 3641.04,813.987 3630.73,821.864C3620.41,829.74 3614.62,840.423 3614.62,851.563L3614.62,922.309C3614.62,944.588 3603.03,965.953 3582.4,981.707C3561.77,997.46 3533.79,1006.31 3504.62,1006.31C3503.09,1006.31 3501.55,1006.31 3500.02,1006.31Z" style="fill:url(#_Linear1);stroke:url(#_Linear2);stroke-width:20.6px;"/>
+				</g>
+				<g transform="matrix(0.902793,0,0,1,357.293,0)">
+					<path d="M3510.34,540C3593.86,468.567 3677.37,462.597 3760.89,540" style="fill:none;stroke:white;stroke-width:25.19px;"/>
+				</g>
+				<g transform="matrix(-0.902793,0,0,1,7325.21,0)">
+					<path d="M3510.34,540C3593.86,468.567 3677.37,462.597 3760.89,540" style="fill:none;stroke:white;stroke-width:25.19px;"/>
+				</g>
+			</g>
+			<defs>
+				<linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.52467e-14,688.994,-902.247,4.21887e-14,3839.78,317.316)"><stop offset="0" style="stop-color:rgb(25,28,36);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(29,48,49);stop-opacity:1"/></linearGradient>
+				<linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.52467e-14,688.994,-902.247,4.21887e-14,3839.78,317.316)"><stop offset="0" style="stop-color:rgb(116,190,105);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(55,212,175);stop-opacity:1"/></linearGradient>
+			</defs>
+		</svg>
+		<h1>SupportSquid</h1>
+		<p>タコが見ている</p>
+	</section>
+</Layout>
+
+<style>
+	body {
+		color: #030303;
+		font-family: system-ui;
+	}
+
+	section#main {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		min-height: 100vh;
+		background: linear-gradient(to bottom right, #D4F5F5, #26F77D)
+	}
+
+	svg {
+		display: block;
+		filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
+	}
+
+	.hover {
+		animation: hover 5s ease infinite;
+	}
+
+	@keyframes hover {
+		0% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(-50px);
+		}
+	}
+</style>
